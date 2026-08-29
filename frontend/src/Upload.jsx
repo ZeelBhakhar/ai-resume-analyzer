@@ -71,7 +71,7 @@ function Upload() {
 
       // Send resume to backend
       const response = await fetch(
-        "http://localhost:5000/api/analyze",
+        "https://ai-resume-analyzer-backend-ytem.onrender.com/api/analyze",
         {
           method: "POST",
           body: formData,
