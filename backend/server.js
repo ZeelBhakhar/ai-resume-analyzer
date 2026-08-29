@@ -197,7 +197,7 @@ async function generateWithRetry(generateFunction, maxRetries = 3) {
     console.log("Sending request to Gemini...");
     const response = await generateWithRetry(() =>
     ai.models.generateContent({
-      model: "gemini-2.5-flash",
+      model: "gemini-3.7-flash",
       contents: prompt,
 
       config: {
